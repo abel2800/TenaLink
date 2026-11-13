@@ -1,6 +1,6 @@
 # Sitemap
 
-MediConnect includes exactly three main pages, as required for Week 1.
+TenaLink includes exactly three main pages, as required for Week 1.
 
 1. Home
    - Hero section

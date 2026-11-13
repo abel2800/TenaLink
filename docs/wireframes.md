@@ -1,46 +1,27 @@
-# Wireframes
+# Visual Wireframes
 
-## Mobile wireframes
-### Home
-- Header with logo and menu
-- Hero with headline, subheadline, primary CTA
-- Trust statistics bar
-- Care category cards
-- Patient journey section
-- Final CTA panel
+These are low-fidelity layout wireframes for the three required TenaLink pages. They show page hierarchy and responsive arrangement, not final visual styling or functional behavior.
 
-### Find Care
-- Search field and category chips
-- Filter bar
-- List of provider cards
-- Highlight card for urgent care or specialists
-- Trust/resource section
+## Home
 
-### Appointments
-- Upcoming visit summary card
-- Booking steps panel
-- Availability list with time options
-- Reminders and support info
+| Mobile | Desktop |
+|---|---|
+| [Home mobile wireframe](./wireframes/home-mobile.svg) | [Home desktop wireframe](./wireframes/home-desktop.svg) |
 
-## Desktop wireframes
-### Home
-- Spacious hero section with text and illustration-inspired card
-- Three service cards
-- Benefits and patient journey layout
-- Corporate/trust badges
-- Footer navigation
+## Find Care
 
-### Find Care
-- Left column: search filters
-- Right column: provider listing grid
-- Highlight panels and sorting toolbar
-- Resource section at bottom
+| Mobile | Desktop |
+|---|---|
+| [Find Care mobile wireframe](./wireframes/find-care-mobile.svg) | [Find Care desktop wireframe](./wireframes/find-care-desktop.svg) |
 
-### Appointments
-- Overview panel on the left
-- Schedule list and booking action cards on the right
-- Step-by-step appointment summary
-- Support and safety information
+## Appointments
 
-## Design rationale
-The wireframes keep the experience clean and simple, emphasizing core features while preserving focus on trust, clarity, and accessibility across screen sizes.
+| Mobile | Desktop |
+|---|---|
+| [Appointments mobile wireframe](./wireframes/appointments-mobile.svg) | [Appointments desktop wireframe](./wireframes/appointments-desktop.svg) |
+
+## Layout notes
+
+- Mobile layouts use a compact menu and a single-column content flow.
+- Desktop layouts use wider content grids, with filters beside provider results and appointment details arranged side by side.
+- All views retain clear section hierarchy, primary actions, and consistent footer navigation.

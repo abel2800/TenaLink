@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Review upcoming appointment information and scheduling steps in the MediConnect prototype." />
-    <title>MediConnect | Appointments</title>
+    <meta name="description" content="Review upcoming appointment information and scheduling steps in the TenaLink prototype." />
+    <title>TenaLink | Appointments</title>
+    <link rel="icon" type="image/png" href="assets/TenaLink.png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -12,12 +13,18 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" aria-label="MediConnect home" class="brand">
-          <img src="assets/medi-connect-mark.svg" alt="MediConnect mark" class="brand-mark" />
-          <span>MediConnect</span>
+        <a href="index.html" aria-label="TenaLink home" class="brand">
+          <img src="assets/TenaLink.png" alt="" class="brand-mark" />
+          <span>TenaLink</span>
         </a>
 
-        <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="primary-nav" class="main-nav" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="find-care.html">Find Care</a>
           <a href="appointments.html" class="active">Appointments</a>
@@ -132,9 +139,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div>
-          <a href="index.html" class="brand" aria-label="MediConnect home">
-            <img src="assets/medi-connect-mark.svg" alt="MediConnect logo" class="brand-mark" />
-            <span>MediConnect</span>
+          <a href="index.html" class="brand" aria-label="TenaLink home">
+            <img src="assets/TenaLink.png" alt="" class="brand-mark" />
+            <span>TenaLink</span>
           </a>
           <p>Healthcare discovery made clearer and more human.</p>
         </div>
@@ -147,8 +154,9 @@
       </div>
 
       <div class="container footer-meta">
-        <p>© 2026 MediConnect. Designed for week-one prototype exploration.</p>
+        <p>© 2026 TenaLink. Designed for week-one prototype exploration.</p>
       </div>
     </footer>
+    <script src="js/navigation.js" defer></script>
   </body>
 </html>

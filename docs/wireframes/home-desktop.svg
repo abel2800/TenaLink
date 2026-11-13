@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
+  <title id="title">TenaLink Home desktop wireframe</title>
+  <desc id="desc">Low-fidelity desktop layout with header, hero, care pathways, three-step journey, benefits, call to action, and footer.</desc>
+  <rect width="1440" height="1120" fill="#f3f5f4"/>
+  <text x="60" y="46" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#174c3e">TENALINK / HOME — DESKTOP WIREFRAME</text>
+  <rect x="60" y="70" width="1320" height="74" rx="8" fill="#fff" stroke="#8a9993"/>
+  <rect x="88" y="91" width="42" height="32" rx="6" fill="#dbe6e1" stroke="#8a9993"/><text x="144" y="112" font-family="Arial" font-size="18" fill="#42534d">TenaLink wordmark</text>
+  <text x="730" y="112" font-family="Arial" font-size="16" fill="#42534d">Home     Find Care     Appointments</text>
+  <rect x="1212" y="88" width="136" height="38" rx="18" fill="#dbe6e1" stroke="#8a9993"/><text x="1240" y="112" font-family="Arial" font-size="14" fill="#42534d">Book a visit</text>
+  <rect x="60" y="164" width="1320" height="340" rx="12" fill="#e7eeea" stroke="#8a9993"/>
+  <text x="96" y="204" font-family="Arial" font-size="13" fill="#65736d">HERO / INTRODUCTION</text>
+  <rect x="96" y="226" width="530" height="28" rx="5" fill="#cbd5d0"/><rect x="96" y="266" width="468" height="28" rx="5" fill="#cbd5d0"/>
+  <text x="96" y="247" font-family="Arial" font-size="18" fill="#34433d">Find care that fits your life.</text>
+  <rect x="96" y="315" width="470" height="18" rx="4" fill="#d5ddd9"/><rect x="96" y="342" width="430" height="18" rx="4" fill="#d5ddd9"/>
+  <text x="96" y="385" font-family="Arial" font-size="13" fill="#65736d">Supporting value proposition</text>
+  <rect x="96" y="416" width="146" height="44" rx="20" fill="#cadbd4" stroke="#87968f"/><text x="122" y="443" font-family="Arial" font-size="14" fill="#34433d">Find a doctor</text>
+  <rect x="254" y="416" width="166" height="44" rx="20" fill="#fff" stroke="#87968f"/><text x="280" y="443" font-family="Arial" font-size="14" fill="#34433d">View appointments</text>
+  <rect x="824" y="198" width="480" height="272" rx="18" fill="#fff" stroke="#87968f"/>
+  <text x="860" y="230" font-family="Arial" font-size="13" fill="#65736d">FEATURED PROVIDER CARD</text>
+  <circle cx="1064" cy="292" r="44" fill="#dbe6e1" stroke="#87968f"/><text x="1045" y="298" font-family="Arial" font-size="14" fill="#42534d">Photo</text>
+  <rect x="908" y="350" width="310" height="18" rx="4" fill="#d5ddd9"/><rect x="946" y="380" width="234" height="14" rx="4" fill="#e1e7e4"/>
+  <rect x="852" y="418" width="132" height="36" rx="6" fill="#f3f5f4" stroke="#c2cbc7"/><rect x="998" y="418" width="132" height="36" rx="6" fill="#f3f5f4" stroke="#c2cbc7"/><rect x="1144" y="418" width="132" height="36" rx="6" fill="#f3f5f4" stroke="#c2cbc7"/>
+  <text x="90" y="558" font-family="Arial" font-size="20" font-weight="700" fill="#34433d">CARE PATHWAYS</text>
+  <rect x="60" y="580" width="420" height="120" rx="12" fill="#fff" stroke="#8a9993"/><rect x="510" y="580" width="420" height="120" rx="12" fill="#fff" stroke="#8a9993"/><rect x="960" y="580" width="420" height="120" rx="12" fill="#fff" stroke="#8a9993"/>
+  <text x="86" y="620" font-family="Arial" font-size="16" fill="#42534d">Primary care</text><text x="536" y="620" font-family="Arial" font-size="16" fill="#42534d">Specialists</text><text x="986" y="620" font-family="Arial" font-size="16" fill="#42534d">Same-day visits</text>
+  <rect x="86" y="640" width="340" height="14" rx="4" fill="#e1e7e4"/><rect x="536" y="640" width="340" height="14" rx="4" fill="#e1e7e4"/><rect x="986" y="640" width="340" height="14" rx="4" fill="#e1e7e4"/>
+  <text x="90" y="754" font-family="Arial" font-size="20" font-weight="700" fill="#34433d">HOW IT WORKS</text>
+  <rect x="60" y="776" width="420" height="100" rx="12" fill="#e7eeea" stroke="#8a9993"/><rect x="510" y="776" width="420" height="100" rx="12" fill="#e7eeea" stroke="#8a9993"/><rect x="960" y="776" width="420" height="100" rx="12" fill="#e7eeea" stroke="#8a9993"/>
+  <text x="86" y="816" font-family="Arial" font-size="16" fill="#42534d">01  Search</text><text x="536" y="816" font-family="Arial" font-size="16" fill="#42534d">02  Compare</text><text x="986" y="816" font-family="Arial" font-size="16" fill="#42534d">03  Book</text>
+  <rect x="60" y="902" width="1320" height="104" rx="16" fill="#dcebe5" stroke="#8a9993"/><text x="94" y="948" font-family="Arial" font-size="20" font-weight="700" fill="#34433d">TRUST &amp; BENEFITS / FINAL CALL TO ACTION</text><rect x="1150" y="930" width="184" height="42" rx="20" fill="#fff" stroke="#87968f"/>
+  <rect x="60" y="1030" width="1320" height="56" rx="8" fill="#fff" stroke="#8a9993"/><text x="88" y="1064" font-family="Arial" font-size="14" fill="#42534d">Footer: logo · page links · privacy and prototype note</text>
+</svg>

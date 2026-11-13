@@ -1,7 +1,8 @@
 # Asset and Source Log
 
-## Custom-created assets
-- assets/medi-connect-mark.svg — custom healthcare brand mark created for the MediConnect identity
+## Provided brand assets
+- assets/TenaLink.png — compact TenaLink healthcare symbol, provided by the project owner and used in the page headers, footers, and browser tab icon
+- assets/TenaLink-full-logo.png — horizontal TenaLink logo and tagline, provided by the project owner and retained as an optional brand asset
 
 ## Source references
 - Design direction was created from product strategy and branding requirements set in the Week 1 brief.
@@ -10,5 +11,6 @@
 - Color tokens are defined directly in the design system to maintain consistency and avoid dependency issues.
 
 ## File usage
-- The mark is used in the header of the main pages.
+- The compact symbol is paired with the TenaLink name in each page header and footer.
+- The compact symbol is also used as the browser tab icon.
 - The prototype relies on HTML/CSS rather than external frameworks to keep the project lightweight and easy to navigate.

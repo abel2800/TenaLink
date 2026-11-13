@@ -1,6 +1,6 @@
-# MediConnect
+# TenaLink
 
-MediConnect is a responsive healthcare discovery and appointment platform concept created during Week 1 of the Ishvexa Hub internship. The project establishes the foundation for a patient-friendly experience that helps users find care providers, compare clinics, and manage upcoming appointments.
+TenaLink is a responsive healthcare discovery and appointment platform concept created during Week 1 of the Ishvexa Hub internship. The project establishes the foundation for a patient-friendly experience that helps users find care providers, compare clinics, and manage upcoming appointments.
 
 ## Project status
 
@@ -39,22 +39,38 @@ Then open:
 ## Project structure
 
 ```text
-MediConnect/
+TenaLink/
 ├── assets/
-│   └── medi-connect-mark.svg
+│   ├── TenaLink-full-logo.png
+│   └── TenaLink.png
 ├── css/
 │   └── styles.css
 ├── docs/
 │   ├── asset-source-log.md
 │   ├── brief.md
 │   ├── design-system.md
+│   ├── evidence.md
 │   ├── problem-statement.md
 │   ├── project-objectives.md
+│   ├── screenshots/
+│   │   ├── appointments-desktop.png
+│   │   ├── appointments-mobile.png
+│   │   ├── find-care-desktop.png
+│   │   ├── find-care-mobile.png
+│   │   ├── home-desktop.png
+│   │   └── home-mobile.png
 │   ├── scope-and-limitations.md
 │   ├── sitemap.md
 │   ├── target-users.md
 │   ├── week1-submission-checklist.md
-│   └── wireframes.md
+│   ├── wireframes.md
+│   └── wireframes/
+│       ├── appointments-desktop.svg
+│       ├── appointments-mobile.svg
+│       ├── find-care-desktop.svg
+│       ├── find-care-mobile.svg
+│       ├── home-desktop.svg
+│       └── home-mobile.svg
 ├── appointments.html
 ├── find-care.html
 ├── index.html

@@ -1,7 +1,7 @@
-# MediConnect Project Brief
+# TenaLink Project Brief
 
 ## Overview
-MediConnect is a patient-first digital healthcare platform designed to simplify the way people discover suitable clinics, compare providers, and schedule care appointments. The experience is built around clarity, trust, and accessibility, helping users move from uncertainty to action with minimal friction.
+TenaLink is a patient-first digital healthcare platform designed to simplify the way people discover suitable clinics, compare providers, and schedule care appointments. The experience is built around clarity, trust, and accessibility, helping users move from uncertainty to action with minimal friction.
 
 ## Business intent
 The project addresses the problem of fragmented healthcare discovery by bringing provider information, care categories, and appointment planning into one intuitive interface. The platform aims to help patients make informed choices while reducing the confusion often associated with booking medical care.

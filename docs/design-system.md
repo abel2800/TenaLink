@@ -1,7 +1,7 @@
 # Design System and Color Tokens
 
 ## Design direction
-MediConnect adopts a premium, calming healthcare visual identity built around white space, emerald green accents, and crisp sans-serif typography. The system emphasizes clarity and trust while remaining modern and accessible.
+TenaLink adopts a premium, calming healthcare visual identity built around white space, emerald green accents, and crisp sans-serif typography. The system emphasizes clarity and trust while remaining modern and accessible.
 
 ## Color tokens
 - Emerald 50: #ECFDF5
