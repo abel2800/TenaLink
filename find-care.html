@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find care providers by specialty, location, and insurance information using the MediConnect prototype." />
+    <title>MediConnect | Find Care</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" aria-label="MediConnect home" class="brand">
+          <img src="assets/medi-connect-mark.svg" alt="MediConnect mark" class="brand-mark" />
+          <span>MediConnect</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="find-care.html" class="active">Find Care</a>
+          <a href="appointments.html">Appointments</a>
+        </nav>
+
+        <a href="appointments.html" class="nav-cta">Schedule</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <div class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Find Care</span>
+          </div>
+          <h1 id="page-title">Find the right clinic or specialist.</h1>
+          <p class="lead">Search by need, location, and access preferences to compare care options with clarity.</p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="care-title">
+        <div class="container">
+          <div class="filter-bar" aria-label="Care filters">
+            <button type="button" class="filter-pill active">All specialties</button>
+            <button type="button" class="filter-pill">Primary care</button>
+            <button type="button" class="filter-pill">Dermatology</button>
+            <button type="button" class="filter-pill">Pediatrics</button>
+            <button type="button" class="filter-pill">Mental health</button>
+          </div>
+
+          <div class="provider-grid" id="care-title">
+            <article class="provider-card">
+              <div class="meta-row">
+                <span class="price-tag">Now accepting</span>
+                <span>4.9 ★</span>
+              </div>
+              <h3>Harbor Family Clinic</h3>
+              <p>Primary care and preventative services for adults and children.</p>
+              <div class="meta-row">
+                <span>Downtown</span>
+                <span>•</span>
+                <span>Same-day visits</span>
+              </div>
+            </article>
+
+            <article class="provider-card">
+              <div class="meta-row">
+                <span class="price-tag">Top rated</span>
+                <span>4.8 ★</span>
+              </div>
+              <h3>Evergreen Skin Center</h3>
+              <p>Dermatology consults, treatment plans, and preventive skin screenings.</p>
+              <div class="meta-row">
+                <span>Westside</span>
+                <span>•</span>
+                <span>New patient slots</span>
+              </div>
+            </article>
+
+            <article class="provider-card">
+              <div class="meta-row">
+                <span class="price-tag">Highly recommended</span>
+                <span>5.0 ★</span>
+              </div>
+              <h3>BrightPath Pediatrics</h3>
+              <p>Compassionate pediatric care with early wellness visits and follow-ups.</p>
+              <div class="meta-row">
+                <span>North Grove</span>
+                <span>•</span>
+                <span>Open 7 days</span>
+              </div>
+            </article>
+
+            <article class="provider-card">
+              <div class="meta-row">
+                <span class="price-tag">Open today</span>
+                <span>4.7 ★</span>
+              </div>
+              <h3>North Lake Therapy</h3>
+              <p>Supportive mental health services with virtual and in-person options.</p>
+              <div class="meta-row">
+                <span>Online + local</span>
+                <span>•</span>
+                <span>Evenings</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="resources-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Helpful resources</span>
+            <h2 id="resources-title">How to choose the right provider.</h2>
+          </div>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <div class="icon" aria-hidden="true">📌</div>
+              <h3>Check credentials</h3>
+              <p>Confirm specialties, clinic history, and patient trust signals before booking.</p>
+            </article>
+            <article class="support-card">
+              <div class="icon" aria-hidden="true">🧭</div>
+              <h3>Review location</h3>
+              <p>Compare distance, convenience, and transit access to reduce scheduling friction.</p>
+            </article>
+            <article class="support-card">
+              <div class="icon" aria-hidden="true">⌚</div>
+              <h3>Match your schedule</h3>
+              <p>Choose providers with appointment windows that align with your daily routine.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="index.html" class="brand" aria-label="MediConnect home">
+            <img src="assets/medi-connect-mark.svg" alt="MediConnect logo" class="brand-mark" />
+            <span>MediConnect</span>
+          </a>
+          <p>Healthcare discovery made clearer and more human.</p>
+        </div>
+
+        <nav aria-label="Footer navigation" class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="find-care.html">Find Care</a>
+          <a href="appointments.html">Appointments</a>
+        </nav>
+      </div>
+
+      <div class="container footer-meta">
+        <p>© 2026 MediConnect. Designed for week-one prototype exploration.</p>
+      </div>
+    </footer>
+  </body>
+</html>
