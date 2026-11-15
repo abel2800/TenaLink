@@ -4,39 +4,35 @@
 TenaLink adopts a premium, calming healthcare visual identity built around white space, emerald green accents, and crisp sans-serif typography. The system emphasizes clarity and trust while remaining modern and accessible.
 
 ## Color tokens
-- Emerald 50: #ECFDF5
-- Emerald 100: #D1FAE5
-- Emerald 500: #10B981
-- Emerald 600: #059669
-- Emerald 700: #047857
-- Slate 50: #F8FAFC
-- Slate 100: #F1F5F9
-- Slate 700: #334155
-- Slate 900: #0F172A
-- White: #FFFFFF
+- Primary emerald: `#047857`
+- Deep emerald: `#064E3B`
+- Secondary emerald: `#059669`
+- Mint surface: `#ECFDF5`
+- Page surface: `#F9FAFB`
+- Text: `#111827`
+- Muted text: `#4B5563`
+- Border: `#E5E7EB`
+- White: `#FFFFFF`
 
 ## Typography
-- Headings: "Segoe UI", "Inter", sans-serif
-- Body: "Segoe UI", "Inter", sans-serif
-- Font weight emphasis: 500, 600, 700
+- Headings and body: `Inter, Manrope, "Segoe UI", sans-serif`
+- Responsive heading sizes use `clamp()`.
+- Font weight emphasis: 550–750
 
 ## Spacing scale
-- xs: 4px
-- sm: 8px
-- md: 16px
-- lg: 24px
-- xl: 32px
-- xxl: 48px
+- `--space-1` through `--space-20`: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, and 80px
 
 ## Layout rules
-- Twelve-column desktop grid with comfortable margins
-- Single-column mobile stacking order
-- Cards with rounded corners and subtle shadows
-- Generous spacing between major sections
-- High contrast for accessibility
+- Main content is capped at 1180px with fluid side margins.
+- Responsive layouts adapt at 920px, 680px, and 380px.
+- Card grids reduce from three columns to two and then one where appropriate.
+- Cards use rounded corners, light borders, and restrained shadows.
+- Focus-visible controls use a high-contrast outline; reduced-motion preferences are respected.
 
 ## Component style
-- Buttons: rounded full-width or pill-shaped depending on context
-- Cards: white background with soft border and shadow
-- Inputs: white surfaces with emerald border focus ring
-- Badges: emerald accent backgrounds for status or category labeling
+- Buttons: shared primary/outline styles; full-width on narrow layouts where useful.
+- Cards: reusable directory, specialty, and process-card treatments.
+- Inputs: labelled controls with visible keyboard focus.
+- Badges: compact emerald/mint labels for fictional sample data.
+
+The authoritative token definitions are in [`../css/styles.css`](../css/styles.css).

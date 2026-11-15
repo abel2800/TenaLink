@@ -3,203 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TenaLink helps patients discover trusted care and manage appointments with confidence." />
-    <title>TenaLink | Home</title>
+    <meta name="description" content="Explore fictional sample healthcare providers and appointment options in Addis Ababa with the TenaLink demonstration directory." />
+    <title>TenaLink | Your Health. Our Connection.</title>
     <link rel="icon" type="image/png" href="assets/TenaLink.png" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/site-data.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/site.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" aria-label="TenaLink home" class="brand">
-          <img src="assets/TenaLink.png" alt="" class="brand-mark" />
-          <span>TenaLink</span>
+        <a href="index.html" class="brand" aria-label="TenaLink home">
+          <img src="assets/TenaLink-full-logo.png" alt="TenaLink — Your Health. Our Connection." class="brand-logo" />
         </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
         </button>
-
         <nav id="primary-nav" class="main-nav" aria-label="Primary navigation">
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html" class="active" aria-current="page">Home</a>
           <a href="find-care.html">Find Care</a>
           <a href="appointments.html">Appointments</a>
         </nav>
-
-        <a href="find-care.html" class="nav-cta">Book a visit</a>
+        <a href="find-care.html" class="button button-primary nav-cta">Find a Doctor</a>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero hero-home" aria-labelledby="hero-title">
         <div class="container hero-grid">
-          <div>
-            <span class="eyebrow">Patient-first care</span>
-            <h1 id="hero-title">Find care that fits your life.</h1>
-            <p class="lead">
-              Discover trusted healthcare providers, compare specialties, and stay organized with a clearer,
-              more confident care journey.
-            </p>
-
+          <div class="hero-copy">
+            <p class="eyebrow">A clearer way to explore care in Addis Ababa</p>
+            <h1 id="hero-title">Your next step toward the right care.</h1>
+            <p class="lead">Discover sample hospitals, explore specialties, and preview appointment options with a calm, connected experience.</p>
             <div class="hero-actions">
-              <a href="find-care.html" class="button primary">Find a doctor</a>
-              <a href="appointments.html" class="button secondary">View appointments</a>
+              <a href="find-care.html" class="button button-primary">Find a Doctor</a>
+              <a href="find-care.html?type=hospital" class="button button-outline">Explore Hospitals</a>
+            </div>
+            <p class="hero-note">A TenaLink frontend demonstration. All providers and availability shown are fictional sample data.</p>
+          </div>
+          <div class="hero-visual" role="img" aria-label="TenaLink care directory illustration with sample locations and appointment options">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="hero-center-card">
+              <img src="assets/TenaLink.png" alt="" class="hero-mark" />
+              <span class="hero-center-label">Care, connected</span>
+              <strong>Explore with confidence</strong>
+              <span class="hero-center-caption">Sample directory · Addis Ababa</span>
+            </div>
+            <div class="hero-float-card hero-float-location">
+              <span class="mini-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <span><small>Explore nearby</small><strong>Addis Ababa</strong></span>
+            </div>
+            <div class="hero-float-card hero-float-care">
+              <span class="mini-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11Z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg>
+              </span>
+              <span><small>Care options</small><strong>Made easier to compare</strong></span>
             </div>
           </div>
+        </div>
+      </section>
 
-          <aside class="hero-panel" aria-label="Featured care provider">
-            <div class="doctor-card">
-              <div class="doctor-figure">
-                <div class="profile" aria-hidden="true">DR</div>
-              </div>
-              <h2>Dr. Amara Brooks</h2>
-              <p>Primary Care · Family Medicine</p>
-              <div class="meta-row">
-                <span>⭐ 4.9 rating</span>
-                <span>•</span>
-                <span>Next opening today</span>
-              </div>
-              <div class="stat-strip" aria-label="healthcare stats">
-                <div class="stat-item">
-                  <strong>3,200+</strong>
-                  <span>patients cared for</span>
-                </div>
-                <div class="stat-item">
-                  <strong>12 min</strong>
-                  <span>average wait</span>
-                </div>
-                <div class="stat-item">
-                  <strong>98%</strong>
-                  <span>satisfaction</span>
-                </div>
-              </div>
+      <section class="search-section" aria-labelledby="search-title">
+        <div class="container">
+          <form id="home-search-form" class="search-panel" action="find-care.html" method="get">
+            <div class="search-copy">
+              <p class="eyebrow">Start exploring</p>
+              <h2 id="search-title">What care are you looking for?</h2>
             </div>
-          </aside>
+            <label class="search-field">
+              <span class="sr-only">Search doctor, hospital, or specialty</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+              <input id="home-search" type="search" name="q" placeholder="Doctor, hospital, or specialty" />
+            </label>
+            <button type="submit" class="button button-primary">Search care</button>
+          </form>
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="services-title">
+      <section class="content-section" aria-labelledby="specialties-title">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Care pathways</span>
-            <h2 id="services-title">Simple ways to get help.</h2>
-            <p>From preventive visits to same-day support, TenaLink gives patients a clearer path to the right care.</p>
-          </div>
-
-          <div class="card-grid">
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">✚</div>
-              <h3>Primary care</h3>
-              <p>Build a lasting care plan with providers who understand your health history and goals.</p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">🩺</div>
-              <h3>Specialists</h3>
-              <p>Explore cardiology, dermatology, pediatrics, and other experts in one place.</p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">🕒</div>
-              <h3>Same-day visits</h3>
-              <p>Find clinics with urgent availability and fast access when symptoms need attention now.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="journey-title">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">How it works</span>
-            <h2 id="journey-title">From search to care in three steps.</h2>
-          </div>
-
-          <div class="steps">
-            <article class="step">
-              <div class="step-number" aria-hidden="true">1</div>
-              <h3>Search</h3>
-              <p>Browse by care need, provider type, location, and availability.</p>
-            </article>
-            <article class="step">
-              <div class="step-number" aria-hidden="true">2</div>
-              <h3>Compare</h3>
-              <p>Review profiles, patient experiences, and key clinic details before choosing.</p>
-            </article>
-            <article class="step">
-              <div class="step-number" aria-hidden="true">3</div>
-              <h3>Book</h3>
-              <p>Move quickly from decision to a confirmed appointment that fits your routine.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="why-title">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Why patients choose us</span>
-            <h2 id="why-title">Built around clarity, trust, and convenience.</h2>
-          </div>
-
-          <div class="card-grid">
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">✓</div>
-              <h3>Verified care</h3>
-              <p>See clinic credentials, specialties, and patient confidence indicators before booking.</p>
-            </article>
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">📍</div>
-              <h3>Local access</h3>
-              <p>Find care near home, work, or school with a location-first search experience.</p>
-            </article>
-            <article class="info-card">
-              <div class="icon" aria-hidden="true">🔒</div>
-              <h3>Confidence-first</h3>
-              <p>Stay informed with clear steps, supportive guidance, and simplified scheduling options.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="cta-title">
-        <div class="container">
-          <div class="cta-banner">
             <div>
-              <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: white;">Ready when you are</span>
-              <h2 id="cta-title" style="margin-top: 0.7rem; margin-bottom: 0;">Start your care journey today.</h2>
+              <p class="eyebrow">Explore by specialty</p>
+              <h2 id="specialties-title">Care for every part of life.</h2>
             </div>
-            <a href="find-care.html" class="button secondary">Explore care options</a>
+            <a href="find-care.html" class="text-link">View the directory <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="specialty-grid">
+            <a class="specialty-card" href="find-care.html?specialty=Cardiology"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 8.5c0 5-8 10-8 10s-8-5-8-10a4 4 0 0 1 7-2.6L12 7l1-1.1a4 4 0 0 1 7 2.6Z"/><path d="M3 12h5l2-3 3.5 6 2-3H21"/></svg></span><strong>Cardiology</strong><span>Heart health</span></a>
+            <a class="specialty-card" href="find-care.html?specialty=Dermatology"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M9 10h.01M15 10h.01M9 15c1.8-1.5 4.2-1.5 6 0"/></svg></span><strong>Dermatology</strong><span>Skin health</span></a>
+            <a class="specialty-card" href="find-care.html?specialty=Pediatrics"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-3.8-7-10a4 4 0 0 1 7-2.4A4 4 0 0 1 19 11c0 6.2-7 10-7 10Z"/><path d="M9 12h6M12 9v6"/></svg></span><strong>Pediatrics</strong><span>Care for children</span></a>
+            <a class="specialty-card" href="find-care.html?specialty=Neurology"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-5.7 1.3A3.5 3.5 0 0 0 4 10a3.5 3.5 0 0 0 1 6.5A3 3 0 0 0 10 19v2"/><path d="M12 3a3 3 0 0 1 5.7 1.3A3.5 3.5 0 0 1 20 10a3.5 3.5 0 0 1-1 6.5A3 3 0 0 1 14 19v2M12 3v18"/></svg></span><strong>Neurology</strong><span>Nervous system</span></a>
+            <a class="specialty-card" href="find-care.html?specialty=Dentistry"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4c2-1 3 1 5 1s3-2 5-1c3 1 2 5 1 8l-2 7c-.5 2-2 2-2.5 0L12 14l-1.5 5c-.5 2-2 2-2.5 0l-2-7C5 9 4 5 7 4Z"/></svg></span><strong>Dentistry</strong><span>Oral health</span></a>
+            <a class="specialty-card" href="find-care.html?specialty=General%20Medicine"><span class="specialty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v5a4 4 0 0 0 8 0V3M6 3h4M14 3h4M12 12v3a5 5 0 0 0 10 0v-1"/><circle cx="22" cy="12" r="1"/></svg></span><strong>General Medicine</strong><span>Everyday wellness</span></a>
+          </div>
+          <p class="section-disclaimer">Specialties are sample categories for this demonstration, not a statement of services at a real facility.</p>
+        </div>
+      </section>
+
+      <section id="hospitals" class="content-section section-soft" aria-labelledby="hospitals-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Fictional sample listings</p><h2 id="hospitals-title">Explore hospitals and clinics.</h2></div>
+            <a href="find-care.html?type=hospital" class="text-link">See all hospitals <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="directory-preview-grid" data-featured-hospitals></div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="doctors-title">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Fictional sample profiles</p><h2 id="doctors-title">Meet sample care providers.</h2></div>
+            <a href="find-care.html?type=doctor" class="text-link">Find a provider <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="directory-preview-grid doctor-preview-grid" data-featured-doctors></div>
+        </div>
+      </section>
+
+      <section class="content-section section-soft" aria-labelledby="steps-title">
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow">How it works</p><h2 id="steps-title">A simpler path to exploring care.</h2></div></div>
+          <ol class="steps-grid">
+            <li class="step-card"><span class="step-number">01</span><h3>Find a specialist</h3><p>Search fictional sample providers and browse care categories in one place.</p></li>
+            <li class="step-card"><span class="step-number">02</span><h3>Explore your options</h3><p>Compare sample hospital details, specialties, and availability at your pace.</p></li>
+            <li class="step-card"><span class="step-number">03</span><h3>Try the demo flow</h3><p>Submit a local appointment demonstration request to see how a next step could work.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="assistant-title">
+        <div class="container">
+          <div class="assistant-panel">
+            <div class="assistant-symbol" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 7v7M24 34v7M7 24h7m20 0h7M12 12l5 5m14 14 5 5m0-24-5 5m-14 14-5 5"/><circle cx="24" cy="24" r="9"/><path d="M21 24h6m-3-3v6"/></svg>
+            </div>
+            <div><p class="eyebrow">Guided care navigation</p><h2 id="assistant-title">A helpful place to begin.</h2><p>Explore sample specialties and directory listings with TenaLink’s guided navigation concept. It does not diagnose, recommend treatment, or replace advice from a qualified healthcare professional.</p></div>
+            <a href="find-care.html" class="button button-primary">Explore care options</a>
           </div>
         </div>
       </section>
+
+      <section class="safety-note" aria-labelledby="safety-title">
+        <div class="container safety-inner">
+          <span class="safety-icon" aria-hidden="true">i</span>
+          <div><h2 id="safety-title">A demonstration, not medical advice.</h2><p>TenaLink is a frontend concept. Provider profiles, hospital listings, and appointment availability are fictional. This site does not provide diagnosis, treatment, emergency support, or real booking. For urgent concerns, contact local emergency services or a qualified clinician.</p></div>
+        </div>
+      </section>
+      <noscript><p class="container noscript-note">Enable JavaScript to view the sample directory cards and appointment demonstration.</p></noscript>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <a href="index.html" class="brand" aria-label="TenaLink home">
-            <img src="assets/TenaLink.png" alt="" class="brand-mark" />
-            <span>TenaLink</span>
-          </a>
-          <p>Healthcare discovery made clearer and more human.</p>
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="TenaLink home"><img src="assets/TenaLink-full-logo.png" alt="TenaLink — Your Health. Our Connection." class="brand-logo" /></a>
+          <p>A clearer way to explore sample healthcare options in Addis Ababa.</p>
+          <p class="footer-location">Addis Ababa, Ethiopia · Frontend demonstration</p>
         </div>
-
-        <nav aria-label="Footer navigation" class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="find-care.html">Find Care</a>
-          <a href="appointments.html">Appointments</a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="find-care.html">Find Care</a><a href="appointments.html">Appointments</a>
         </nav>
       </div>
-
-      <div class="container footer-meta">
-        <p>© 2026 TenaLink. Designed for week-one prototype exploration.</p>
-      </div>
+      <div class="container footer-bottom"><p>© 2026 TenaLink · Sample data only</p><p>Not a medical service. Do not enter real health or contact information.</p></div>
     </footer>
-    <script src="js/navigation.js" defer></script>
   </body>
 </html>

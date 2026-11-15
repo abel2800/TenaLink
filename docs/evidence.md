@@ -1,6 +1,6 @@
 # Screenshots and Evidence Log
 
-The site was rendered locally and captured as full-page PNG screenshots at 1440px desktop and 390px mobile viewport widths. Captures were regenerated after aligning the mobile menu button beside the visit button at the right side of the header.
+This log preserves the Week 1 captures and links to the Week 2 responsive evidence. Week 2 captures are full-page PNG screenshots generated in local Chromium with Playwright.
 
 ## Saved screenshots
 
@@ -9,6 +9,16 @@ The site was rendered locally and captured as full-page PNG screenshots at 1440p
 | Home | [home-desktop.png](./screenshots/home-desktop.png) | [home-mobile.png](./screenshots/home-mobile.png) |
 | Find Care | [find-care-desktop.png](./screenshots/find-care-desktop.png) | [find-care-mobile.png](./screenshots/find-care-mobile.png) |
 | Appointments | [appointments-desktop.png](./screenshots/appointments-desktop.png) | [appointments-mobile.png](./screenshots/appointments-mobile.png) |
+
+### Week 2 responsive screenshots
+
+Each screenshot uses the exact CSS viewport width in its filename.
+
+| Page | 360px | 768px | 1440px |
+|---|---|---|---|
+| Home | [home-360.png](./screenshots/week2/home-360.png) | [home-768.png](./screenshots/week2/home-768.png) | [home-1440.png](./screenshots/week2/home-1440.png) |
+| Find Care | [find-care-360.png](./screenshots/week2/find-care-360.png) | [find-care-768.png](./screenshots/week2/find-care-768.png) | [find-care-1440.png](./screenshots/week2/find-care-1440.png) |
+| Appointments | [appointments-360.png](./screenshots/week2/appointments-360.png) | [appointments-768.png](./screenshots/week2/appointments-768.png) | [appointments-1440.png](./screenshots/week2/appointments-1440.png) |
 
 ## URL checks
 - `http://localhost:8000/index.html` — HTTP 200
@@ -19,10 +29,9 @@ The site was rendered locally and captured as full-page PNG screenshots at 1440p
 Six SVG wireframes, covering desktop and mobile layouts for Home, Find Care, and Appointments, are linked from [wireframes.md](./wireframes.md).
 
 ## Validation notes
-- The three main HTML pages loaded and showed their expected page headings and navigation.
-- Desktop and mobile captures were generated at their documented viewport widths.
-- Responsive layout was checked at 320, 360, 375, 390, 430, 640, 768, 900, 901, 1024, 1440, and 1920 pixels across all three pages with no horizontal overflow or header collisions.
-- Mobile navigation was checked for open and Escape-to-close behavior at the tested narrow and tablet widths.
-- PNG files and SVG wireframes were checked for valid image dimensions / XML markup.
-- Local links, fragment targets, semantic page headings, and the mobile menu opening behavior were checked.
-- The prototype retains its white and emerald-green visual direction.
+- Week 1 screenshots and wireframes remain available as historical design evidence.
+- Week 2 responsive layout was checked at 360px, 768px, and 1440px on all three pages; each screenshot's pixel width matched its CSS viewport and no horizontal overflow was found.
+- Search, filtering, empty states, both detail-dialog types, mobile navigation, keyboard Escape behavior, and the local-only appointment demonstration were checked in Chromium.
+- The appointment page blocks an incomplete required form, displays a demo confirmation after a valid request, and keeps reserved sample slots in `sessionStorage`.
+- Contrast samples, labelled form controls, visible focus behavior, active-page semantics, and reduced-motion styling were checked. See [testing.md](./testing.md) for methods, results, and limitations.
+- These are frontend demonstration checks, not clinical, production, screen-reader, or cross-browser certification.

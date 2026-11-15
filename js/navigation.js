@@ -4,9 +4,11 @@
 
   if (!toggle || !nav) return;
 
+  nav.querySelectorAll('a.active').forEach((link) => link.setAttribute('aria-current', 'page'));
+
   function setOpen(open) {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
     nav.classList.toggle('is-open', open);
   }
 

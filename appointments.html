@@ -3,160 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Review upcoming appointment information and scheduling steps in the TenaLink prototype." />
+    <meta name="description" content="Try a local-only sample appointment workflow with fictional TenaLink providers and availability." />
     <title>TenaLink | Appointments</title>
     <link rel="icon" type="image/png" href="assets/TenaLink.png" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/site-data.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/site.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" aria-label="TenaLink home" class="brand">
-          <img src="assets/TenaLink.png" alt="" class="brand-mark" />
-          <span>TenaLink</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
+        <a href="index.html" class="brand" aria-label="TenaLink home"><img src="assets/TenaLink-full-logo.png" alt="TenaLink — Your Health. Our Connection." class="brand-logo" /></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
         <nav id="primary-nav" class="main-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="find-care.html">Find Care</a>
-          <a href="appointments.html" class="active">Appointments</a>
+          <a href="index.html">Home</a><a href="find-care.html">Find Care</a><a href="appointments.html" class="active" aria-current="page">Appointments</a>
         </nav>
-
-        <a href="find-care.html" class="nav-cta">Find care</a>
+        <a href="find-care.html" class="button button-primary nav-cta">Find Care</a>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="page-hero" aria-labelledby="appt-page-title">
+      <section class="page-hero" aria-labelledby="page-title">
         <div class="container">
-          <div class="breadcrumbs" aria-label="Breadcrumb">
-            <a href="index.html">Home</a>
-            <span aria-hidden="true">/</span>
-            <span>Appointments</span>
-          </div>
-          <h1 id="appt-page-title">Manage your care appointments with confidence.</h1>
-          <p class="lead">Stay informed about upcoming visits, available time options, and the steps needed before your appointment.</p>
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Appointments</span></nav>
+          <p class="eyebrow">Local-only interaction demo</p>
+          <h1 id="page-title">Explore a sample appointment.</h1>
+          <p class="lead">Choose a fictional provider, date, and available time to preview a simple appointment request flow.</p>
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="booking-title">
-        <div class="container">
-          <div class="appointment-grid" id="booking-title">
-            <article class="appointment-card">
-              <div class="meta-row">
-                <span class="price-tag">Upcoming visit</span>
-                <span>Tue, 10:30 AM</span>
+      <section class="appointment-section" aria-labelledby="appointment-form-title">
+        <div class="container appointment-layout">
+          <div class="appointment-main">
+            <div class="section-heading section-heading-compact">
+              <div><p class="eyebrow">Demonstration workflow</p><h2 id="appointment-form-title">Choose a sample time.</h2></div>
+              <p class="form-intro">No clinic is contacted and no real appointment is created.</p>
+            </div>
+            <p id="storage-notice" class="notice notice-info" role="status" hidden></p>
+            <form id="appointment-form" class="appointment-form">
+              <div class="form-grid">
+                <label class="form-field form-field-wide" for="appointment-doctor">Sample provider
+                  <select id="appointment-doctor" name="doctor" required></select>
+                </label>
+                <label class="form-field form-field-wide" for="appointment-date">Sample date
+                  <select id="appointment-date" name="date" required></select>
+                </label>
               </div>
-              <h3>Dr. Amara Brooks</h3>
-              <p>Primary Care Consultation</p>
-              <div class="meta-row">
-                <span>Room 204</span>
-                <span>•</span>
-                <span>Downtown Clinic</span>
+              <fieldset class="slot-fieldset">
+                <legend id="time-slots-heading" tabindex="-1">Available sample times</legend>
+                <p class="field-help">Times are illustrative and reserved only in this browser session.</p>
+                <div id="time-slots" class="time-slot-grid" role="group" aria-labelledby="time-slots-heading"></div>
+                <p id="slot-status" class="slot-status" aria-live="polite" aria-atomic="true"></p>
+              </fieldset>
+              <div class="form-grid contact-fields">
+                <label class="form-field" for="contact-name">Your name (demo only)
+                  <input id="contact-name" name="name" autocomplete="name" required />
+                </label>
+                <label class="form-field" for="contact-email">Email address (demo only)
+                  <input id="contact-email" name="email" type="email" autocomplete="email" required />
+                </label>
               </div>
-            </article>
-
-            <article class="appointment-card">
-              <div class="meta-row">
-                <span class="price-tag">Available slot</span>
-                <span>Thu, 2:00 PM</span>
-              </div>
-              <h3>Evergreen Skin Center</h3>
-              <p>Consultation for routine skin review</p>
-              <div class="meta-row">
-                <span>New patient</span>
-                <span>•</span>
-                <span>Westside clinic</span>
-              </div>
-            </article>
+              <p class="privacy-note">Use fictional contact details only. Do not enter real personal, medical, or patient information. Form details are not saved or sent.</p>
+              <button class="button button-primary" type="submit">Submit demo request</button>
+              <p id="appointment-confirmation" class="notice notice-success" role="status" aria-live="polite" hidden></p>
+            </form>
           </div>
+          <aside class="appointment-aside">
+            <div class="aside-card">
+              <span class="aside-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3"/></svg></span>
+              <h2>How this demo works</h2>
+              <ol class="aside-steps"><li>Select a fictional sample provider.</li><li>Choose one of that provider’s sample dates and open times.</li><li>Submit the form to reserve the time for this browser session.</li></ol>
+              <p>Reserved sample times become unavailable until the browser session ends. Nothing is sent to a real clinic.</p>
+            </div>
+            <div class="safety-card"><h2>Need medical help?</h2><p>This website is not a medical service. For urgent concerns, contact local emergency services or a qualified healthcare professional.</p></div>
+          </aside>
         </div>
       </section>
-
-      <section class="content-section" aria-labelledby="steps-title">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Appointment steps</span>
-            <h2 id="steps-title">A smooth path from booking to visit.</h2>
-          </div>
-
-          <div class="steps">
-            <article class="step">
-              <div class="step-number" aria-hidden="true">1</div>
-              <h3>Choose time</h3>
-              <p>Select a visit window that works for your schedule and care reason.</p>
-            </article>
-            <article class="step">
-              <div class="step-number" aria-hidden="true">2</div>
-              <h3>Confirm details</h3>
-              <p>Review clinic, provider, visit type, and reminders before finalizing the appointment.</p>
-            </article>
-            <article class="step">
-              <div class="step-number" aria-hidden="true">3</div>
-              <h3>Prepare for care</h3>
-              <p>Receive guidance on documents, check-in steps, and wellness preparation.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="support-title">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Support</span>
-            <h2 id="support-title">Before and after your visit.</h2>
-          </div>
-
-          <div class="support-grid">
-            <article class="support-card">
-              <div class="icon" aria-hidden="true">🗂️</div>
-              <h3>Prepare documents</h3>
-              <p>Bring ID, insurance information, and relevant medical records for faster check-in.</p>
-            </article>
-            <article class="support-card">
-              <div class="icon" aria-hidden="true">🔔</div>
-              <h3>Set reminders</h3>
-              <p>Receive confirmation emails and reminders so your appointment stays easy to manage.</p>
-            </article>
-            <article class="support-card">
-              <div class="icon" aria-hidden="true">💬</div>
-              <h3>Need help?</h3>
-              <p>Contact support for rescheduling, questions, or clarifying visit instructions.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <noscript><p class="container noscript-note">Enable JavaScript to use the appointment demonstration.</p></noscript>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <a href="index.html" class="brand" aria-label="TenaLink home">
-            <img src="assets/TenaLink.png" alt="" class="brand-mark" />
-            <span>TenaLink</span>
-          </a>
-          <p>Healthcare discovery made clearer and more human.</p>
-        </div>
-
-        <nav aria-label="Footer navigation" class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="find-care.html">Find Care</a>
-          <a href="appointments.html">Appointments</a>
-        </nav>
+      <div class="container footer-main">
+        <div class="footer-brand"><a href="index.html" class="brand" aria-label="TenaLink home"><img src="assets/TenaLink-full-logo.png" alt="TenaLink — Your Health. Our Connection." class="brand-logo" /></a><p>A clearer way to explore sample healthcare options in Addis Ababa.</p><p class="footer-location">Addis Ababa, Ethiopia · Frontend demonstration</p></div>
+        <nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="find-care.html">Find Care</a><a href="appointments.html">Appointments</a></nav>
       </div>
-
-      <div class="container footer-meta">
-        <p>© 2026 TenaLink. Designed for week-one prototype exploration.</p>
-      </div>
+      <div class="container footer-bottom"><p>© 2026 TenaLink · Sample data only</p><p>Not a medical service. Do not enter real health or contact information.</p></div>
     </footer>
-    <script src="js/navigation.js" defer></script>
   </body>
 </html>

@@ -1,14 +1,14 @@
 # Scope and Limitations
 
-## In scope
+## Week 1–2 scope
 - Concept definition for a healthcare discovery and appointment platform
 - Three main pages: Home, Find Care, Appointments
-- Semantic HTML prototype with responsive layout
+- Responsive semantic frontend with search, filters, sample details, and local-only appointment demonstration
 - Premium white and emerald visual system
 - Healthcare-oriented feature messaging, CTAs, and trust content
 - Documentation for project planning and progress tracking
 
-## Out of scope for Week 1
+## Out of scope
 - Real AI-powered medical triage
 - Live provider database integration
 - Payment processing or insurance workflows
@@ -18,4 +18,4 @@
 - Production deployment
 
 ## Limitations
-The Week 1 implementation is intentionally a front-end prototype. It demonstrates interface structure and UX direction without implementing the operational systems required for a full production-ready healthcare platform.
+TenaLink is intentionally a frontend demonstration. All providers, facilities, and availability are fictional. Appointment reservations are limited to the current browser session; contact details are not saved or sent, and no clinic is contacted. The site does not diagnose, recommend treatment, provide emergency support, or replace advice from a qualified healthcare professional.
